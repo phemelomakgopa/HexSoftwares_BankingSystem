@@ -59,9 +59,21 @@ public class LoginGUI
 
         // Buttons panel
         JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 10, 0));
-        JButton loginButton = new JButton("Login");
+        
+        JButton loginButton = new JButton("Log In");
+        loginButton.setBackground(new Color(0, 123, 255));  
+        loginButton.setForeground(Color.WHITE);
+        loginButton.setFocusPainted(false);
+
         JButton signUpButton = new JButton("Sign Up");
+        signUpButton.setBackground(new Color(0, 123, 255));  
+        signUpButton.setForeground(Color.WHITE);
+        signUpButton.setFocusPainted(false);  
+        
         JButton exitButton = new JButton("Exit");
+        exitButton.setBackground(Color.RED);  
+        exitButton.setForeground(Color.WHITE);
+        exitButton.setFocusPainted(false);
 
         buttonPanel.add(loginButton);
         buttonPanel.add(signUpButton);
@@ -119,6 +131,9 @@ public class LoginGUI
         inputPanel.add(pinText);
     
         JButton createButton = new JButton("Create Account");
+        createButton.setBackground(new Color(0, 123, 255)); 
+        createButton.setForeground(Color.WHITE);
+        createButton.setFocusPainted(false);
         JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
         buttonPanel.add(createButton);
     

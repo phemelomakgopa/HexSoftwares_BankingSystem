@@ -48,7 +48,12 @@ public class DashboardGUI
         JButton balanceBtn = new JButton("Check Balance");
         JButton miniStmtBtn = new JButton("Mini Statement");
         JButton changePinBtn = new JButton("Change PIN");
+
         JButton logoutBtn = new JButton("Logout");
+        logoutBtn.setBackground(Color.RED); 
+        logoutBtn.setForeground(Color.WHITE);
+        logoutBtn.setFocusPainted(false); 
+
 
         panel.add(depositBtn);
         panel.add(withdrawBtn);
